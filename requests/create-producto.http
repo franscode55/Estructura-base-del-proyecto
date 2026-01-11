@@ -1,0 +1,10 @@
+POST http://localhost:8080/api/v1/producto
+Content-Type: application/json
+
+{
+  "id": 1,
+  "nombreProducto": "Laptop Lenovo ThinkPad",
+  "cantidad": 10,
+  "precio": 3500.50,
+  "descripcion": "Laptop empresarial con 16GB RAM y SSD de 512GB"
+}
