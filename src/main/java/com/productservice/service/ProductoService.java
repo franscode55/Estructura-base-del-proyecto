@@ -62,6 +62,6 @@ public class ProductoService implements IProductoService {
 
     @Override
     public Producto obtenerPorNombre(String nombre) {
-        return productoRepository.findByNombreProducto(nombre);
+        return productoRepository.findByNombreProductoLike(nombre);
     }
 }
