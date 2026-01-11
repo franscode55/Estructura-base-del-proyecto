@@ -1,11 +1,11 @@
 package com.productservice.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Setter
@@ -13,11 +13,11 @@ import lombok.Setter;
 @Entity
 @Table(name = "tbl_producto")
 public class Producto {
-  private int Id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int Id;
     private String nombreProducto;
     private int cantidad;
     private double precio;
     private String descripcion;
-
-
 }
