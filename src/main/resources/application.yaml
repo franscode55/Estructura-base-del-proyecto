@@ -3,13 +3,13 @@ spring:
     name: producto-almacen
 
   datasource:
-    url: jdbc:mysql://localhost:${DB_PORT}/productdb
+    url: jdbc:mysql://localhost:${DB_PORT}/productdb # ?createDatabaseIfNotExist=true
     username: ${DB_USER}
     password: ${DB_PASS}
     driver-class-name: com.mysql.cj.jdbc.Driver
 
   jpa:
-    database-platform: org.hibernate.dialect.MySQL8Dialect
+    database-platform: org.hibernate.dialect.MySQLDialect
     hibernate:
       ddl-auto: update
     show-sql: true
