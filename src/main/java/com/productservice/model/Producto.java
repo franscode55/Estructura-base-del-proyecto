@@ -15,7 +15,7 @@ import lombok.Setter;
 public class Producto {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO) // postgres
-    private int Id;
+    private Integer Id;
     private String nombreProducto;
     private int cantidad;
     private double precio;
